@@ -4,7 +4,7 @@ import { getAllProductsInCollection } from "@/lib/shopify"
 
 function IndexPage({ products }) {
   return (
-    <div className="mx-auto max-w-6xl">
+    <div className="display">
       <ProductListings products={products} />
     </div>
   )

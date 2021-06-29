@@ -1,6 +1,6 @@
-import Image from "next/image"
+
 import Link from "next/link"
-import { useState } from "react"
+
 import ProductDetails from "@/components/Details2"
 import Price from "@/components/Price"
 import ProductSection from "@/components/Section2"
@@ -19,8 +19,8 @@ function ProductCard({ product }) {
 
       <Link href={`/products/${handle}`} passHref>
         <a>
-          <div className="h-72 border-b-2 border-palette-lighter relative">
-            <Image
+          <div className="border-b-2 border-palette-lighter relative">
+            <img
               src={imageNode.originalSrc}
               alt={imageNode.altText}
               layout="fill"

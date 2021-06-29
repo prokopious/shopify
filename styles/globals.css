@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,7 +19,7 @@
   position: fixed;
 }
 .butt {
-  background-color: #61a561af;
+  background-color: #dbdbdbaf;
   padding: 5px;
   border-radius: 4px;
 }
@@ -27,6 +27,7 @@
 .card {
   border-bottom: 1px solid rgb(177, 177, 177);
   border-left: 1px solid rgb(177, 177, 177);
+  border-radius: 4px;
 }
 
 #pad {
@@ -35,18 +36,47 @@
 
 .info {
   padding: 5px;
-  background: linear-gradient(to right, #61a561af, #ffffff);
+  background: linear-gradient(to right, #dbdbdbaf, #ffffff);
   display: grid;
   grid-template-columns: 1fr;
+  color: gray;
 }
 #thegrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+#header {
+  background-color: green;
+}
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 3px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 6px;
+}
+
+@media only screen and (max-width: 900px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6px;
+  }
+}
+
+.display {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6px;
+  }
 }
 
 .test {

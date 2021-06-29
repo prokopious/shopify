@@ -1,5 +1,4 @@
 import { useState, useRef } from 'react'
-import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -14,7 +13,7 @@ function ProductImage({ images }) {
   return (
     <div className="w-full md:w-1/2 max-w-md border border-palette-lighter bg-white rounded shadow-lg">
       <div className="relative h-96">
-        <Image
+        <img
           src={mainImg.originalSrc}
           alt={mainImg.altText}
           layout="fill"
@@ -41,7 +40,7 @@ function ProductImage({ images }) {
                 className="relative w-40 h-32 flex-shrink-0 rounded-sm "
                 onClick={() => setMainImg(imgItem.node)}
               >
-                <Image
+                <img
                   src={imgItem.node.originalSrc}
                   alt={imgItem.node.altText}
                   layout="fill"
