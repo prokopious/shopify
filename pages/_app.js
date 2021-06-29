@@ -1,14 +1,11 @@
-import Layout from '@/components/Layout'
-import SEO from '@/components/SEO'
-import '@/styles/globals.css'
+import Layout from "@/components/Layout"
+import SEO from "@/components/SEO"
+import "@/styles/globals.css"
 
 function MyApp({ Component, pageProps }) {
-
   return (
     <Layout>
-      <SEO 
-        title={process.env.siteTitle}
-      />
+      <SEO title="Hanover Farms" />
       <Component {...pageProps} />
     </Layout>
   )

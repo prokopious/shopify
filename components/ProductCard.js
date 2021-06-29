@@ -1,48 +1,22 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import ProductDetails from '@/components/Details2'
+import ProductDetails from "@/components/Details2"
 import Price from "@/components/Price"
-import ProductSection from '@/components/Section2'
-import { useCartContext } from '@/context/Store'
+import ProductSection from "@/components/Section2"
+
 
 function ProductCard({ product }) {
   const handle = product.node.handle
-  const [quantity, setQuantity] = useState(1)
+
   const title = product.node.title
-  const variant = product.node.variant
+
   const price = product.node.variants.edges[0].node.price
   const imageNode = product.node.images.edges[0].node
-  const cart = useCartContext()
-
-  
-  var item = cart[0].find(item => item.productTitle === `${title}`);
-  console.log(item)
-
-
-
-  async function handleAddOne() {
-    const varId = variant.node.id
-    // update store context
-    if (quantity) {
-      addToCart({
-        productTitle: title,
-        productHandle: handle,
-        productImage: mainImg,
-        variantId: varId,
-        variantPrice: variant.node.price,
-        variantTitle: variant.node.title,
-        variantQuantity: 90,
-      })
-    }
-  }
-
-
-
-
 
   return (
-    <div className="card"><ProductSection productData={product} />
+    <div className="card">
+
       <Link href={`/products/${handle}`} passHref>
         <a>
           <div className="h-72 border-b-2 border-palette-lighter relative">
@@ -53,9 +27,9 @@ function ProductCard({ product }) {
               className="transform duration-500 ease-in-out hover:scale-110"
             />
           </div>
-
-          <button onClick={handleAddOne}>Add One</button>
-
+          </a>
+      </Link>
+      <div id="thegrid">
           <div className="info">
             <div>{title}</div>
 
@@ -63,8 +37,10 @@ function ProductCard({ product }) {
               <Price currency="$" num={price} numSize="text-lg" />
             </div>
           </div>
-        </a>
-      </Link>
+
+          <div className="test">  <ProductSection productData={product} /></div>
+
+          </div>
     </div>
   )
 }
