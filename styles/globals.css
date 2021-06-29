@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buggy-table {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+
+}
+
+.butt-box {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 3px;
+}
+.fixed {
+  position: fixed;
+}
+.butt {
+  background-color: rgb(230, 230, 230);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.card {
+  
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+}
+
+.info {
+  padding: 5px;
+  background: linear-gradient(to top, #b8b8b8af, #ffffff);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3px;
+
+}
+.hthree {
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+#header {
+  padding: 20px;
+  color: white;
+}
+
+.triangle::before {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0; 
+  left: 0em;
+  border: 1em solid transparent;
+  border-left-color: #ffffff;
+}
