@@ -1,7 +1,4 @@
-
 import Link from "next/link"
-
-import ProductDetails from "@/components/Details2"
 import Price from "@/components/Price"
 import ProductSection from "@/components/Section2"
 
@@ -19,12 +16,12 @@ function ProductCard({ product }) {
 
       <Link href={`/products/${handle}`} passHref>
         <a>
-          <div className="border-b-2 border-palette-lighter relative">
-            <img
+          <div className="border-b-0 border-palette-lighter relative">
+            <img id="x"
               src={imageNode.originalSrc}
               alt={imageNode.altText}
               layout="fill"
-              className="transform duration-500 ease-in-out hover:scale-110"
+              className="transform duration-500 ease-in-out"
             />
           </div>
           </a>

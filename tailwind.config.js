@@ -19,7 +19,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        primary: ['"Josefin Sans"']
+        primary: ['"Montserrat"']
       }
     },
   },

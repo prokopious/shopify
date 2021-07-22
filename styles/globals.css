@@ -45,13 +45,33 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+#layer {
+  background-blend-mode: multiply;
+}
 
 #header {
-  background-color: green;
+background-image: url('https://www.linkpicture.com/q/wheat_3.jpg')
 }
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 6px;
+}
+.marq {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.pic {
+  max-width: 150px;
+  max-height: 150px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 6px;
 }
 
@@ -63,6 +83,12 @@
   }
 }
 
+#x {
+  padding: 10px;
+}
+#x:hover {
+  padding: 0px;
+}
 .display {
   margin-left: auto;
   margin-right: auto;
