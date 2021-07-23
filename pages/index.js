@@ -8,6 +8,7 @@ import ReversedMarquee from "@/components/ReversedMarquee"
 function IndexPage({ products }) {
   return (
     <div className="display">
+      <div id="centered">All Products</div>
       <ProductListings products={products} />
       <Marquee>
         <MarqueeStuff products={products} />
