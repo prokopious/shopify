@@ -24,7 +24,7 @@ export default function Navbar() {
       style={{
         backgroundImage: `url('https://www.linkpicture.com/q/wheat_3.jpg')`,
       }}
-      className="navbar"
+      className="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
     >

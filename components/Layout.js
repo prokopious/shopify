@@ -6,11 +6,10 @@ import Navbar from "@/components/Navbar"
 function Layout({ children }) {
   return (
     <CartProvider>
-      <div>
-        <Navbar />
-
+      <Navbar />
+      <body className="has-navbar-fixed-top">
         <main>{children}</main>
-      </div>
+      </body>
     </CartProvider>
   )
 }
