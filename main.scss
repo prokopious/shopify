@@ -4,22 +4,55 @@ $navbar-background-color: rgba(0, 128, 0, 0.473);
 @import "~bulma/bulma";
 
 #centered {
-    text-align: center;
-    font-size: 22px;
-    padding-top: 0px;
+  text-align: center;
+  font-size: 22px;
+  padding-top: 0px;
 
-    padding-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+#butcont {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#inp {
+    width: 70px;
+    border-radius: 5px;
+border: transparent;
+    padding: 5px 10px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.363);
+}
+
+.buttonn {
+    border: transparent;
+    padding: 5px 20px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.363);
+    width: 130px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+
+#arrow {
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.plant {
+    max-width: 400px;
 }
 
 @media only screen and (max-width: 700px) {
+  #centered {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
 
-    #centered {
-        text-align: center;
-        font-size: 18px;
-        padding-top: 20px;
-    
-        padding-bottom: 30px;
-    }
-
-
+    padding-bottom: 30px;
+  }
 }

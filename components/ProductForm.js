@@ -1,6 +1,4 @@
 import { useState } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons"
 import { useCartContext, useAddToCartContext } from "@/context/Store"
 
 function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
@@ -68,16 +66,7 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
 
   return (
     <>
-      {" "}
-      <div>
-        {" "}
-        <button
-    
-          onClick={handleAddOne}
-        >
-          Add One
-        </button>
-      </div>
+      <div></div>
       <div className="w-full">
         <div className="flex justify-start space-x-2 w-full">
           <div className="flex flex-col items-start space-y-1 flex-grow-0">
@@ -91,37 +80,17 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
               step="1"
               value={quantity}
               onChange={e => updateQuantity(e.target.value)}
-              className="text-gray-900 form-input border border-gray-300 w-16 rounded-sm focus:border-palette-light focus:ring-palette-light"
+              className="form-input"
+              id="inp"
             />
           </div>
-          <div className="flex flex-col items-start space-y-1 flex-grow">
-            <label className="text-gray-500 text-base">Size</label>
-            <select
-              id="size-selector"
-              name="size-selector"
-              onChange={event => handleSizeChange(event.target.value)}
-              value={variantId}
-              className="form-select border border-gray-300 rounded-sm w-full text-gray-900 focus:border-palette-light focus:ring-palette-light"
-            >
-              {variants.map(item => (
-                <option
-                  id={item.node.id}
-                  key={item.node.id}
-                  value={item.node.id}
-                >
-                  {item.node.title}
-                </option>
-              ))}
-            </select>
-          </div>
         </div>
+        <div className="buttonn">
         <button
-          className={atcBtnStyle}
-          aria-label="cart-button"
           onClick={handleAddToCart}
         >
           Add To Cart
-        </button>
+        </button></div>
       </div>
     </>
   )
