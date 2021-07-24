@@ -20,7 +20,7 @@ function CartTable() {
   function updateItem(id, quantity) {
     updateCartQuantity(id, quantity)
   }
-
+console.log(cartItems)
   return (
     <div className="min-h-80 max-w-2xl my-4 sm:my-8 mx-auto w-full">
       <div className="mx-auto">
