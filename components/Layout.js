@@ -7,7 +7,7 @@ function Layout({ children }) {
   return (
     <CartProvider>
       <Navbar />
-      <body className="has-navbar-fixed-top">
+      <body id="bod" className="has-navbar-fixed-top">
         <main>{children}</main>
       </body>
     </CartProvider>
