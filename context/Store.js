@@ -93,7 +93,7 @@ export function CartProvider({ children }) {
       }
     })
 
-    // take out zeroes items
+  
     newCart = newCart.filter(i => i.variantQuantity !== 0)
     setCart(newCart)
 
