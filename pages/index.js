@@ -8,13 +8,14 @@ import Navbar from '@/components/Navbar'
 
 function IndexPage({ products }) {
   return (
-    <div className="display">
+    <body>
+      <div className="display">
       <div id="centered">All Products</div>
       <ProductListings products={products} />
       <Marquee>
         <MarqueeStuff products={products} />
       </Marquee>
-    </div>
+    </div></body>
   )
 }
 

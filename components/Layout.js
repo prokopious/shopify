@@ -1,15 +1,13 @@
 import { CartProvider } from "@/context/Store"
-import Nav from "@/components/Nav"
-import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 
 function Layout({ children }) {
   return (
     <CartProvider>
-      <Navbar />
-      <body id="bod" className="has-navbar-fixed-top">
+      <html className="has-navbar-fixed-top">
+        <Navbar/>
         <main>{children}</main>
-      </body>
+      </html>
     </CartProvider>
   )
 }

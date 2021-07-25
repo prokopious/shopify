@@ -90,9 +90,11 @@ console.log(cartItems)
 
         #kart {
           font-size: 17px;
-          padding-bottom: 20px;
+          padding-bottom: 30px;
           text-align: center;
           font-weight: 900;
+          margin-top: 0;
+          padding-top: 0;
         }
         .bt {
           padding: 3px;

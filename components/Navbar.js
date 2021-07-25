@@ -30,7 +30,8 @@ export default function Navbar() {
     >
       <div id="b" className="navbar-brand">
         <a href="/" className="navbar-item">
-          <img id="im"
+          <img
+            id="im"
             src="/farm.png"
             alt="Logo"
             // width='112'
@@ -59,75 +60,58 @@ export default function Navbar() {
           </div>{" "}
         </div>
         <a
-            onClick={() => {
-              setisActive(!isActive)
-            }}
-            role="button"
-            className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+          onClick={() => {
+            setisActive(!isActive)
+          }}
+          role="button"
+          className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
       <div
-          id="navbarBasicExample"
-          className={`navbar-menu ${isActive ? "is-active" : ""}`}
-        >
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <a
-                href="/"
-                className="navbar-item"
+        id="navbarBasicExample"
+        className={`navbar-menu ${isActive ? "is-active" : ""}`}
+      >
+        <div className="navbar-end">
+          <div className="navbar-item">
+            <a href="/" className="navbar-item">
+              Directions
+            </a>
 
-              >
-                Directions
-              </a>
-          
-              <a
-                href="/"
-                className="navbar-item"
-       
-              >
-                About
-              </a>
-              <a
-                href="/"
-                className="navbar-item"
-        
-              >
-                Contact
-              </a>
-            </div>
+            <a href="/" className="navbar-item">
+              About
+            </a>
+            <a href="/" className="navbar-item">
+              Contact
+            </a>
           </div>
         </div>
+      </div>
 
       <style jsx>{`
         #han {
           font-size: 20px;
           color: white;
           padding-left: 5px;
-     
+        }
+
+        #nav {
+          padding-top: 13px;
         }
         #han2 {
           font-size: 20px;
           color: white;
           padding-left: 5px;
-  
         }
-#thing {
-
-
-}
-        #nav {
-          padding: 20px;
+        #thing {
         }
-#b {
 
-}
         #ikon {
           color: white;
           padding-top: 10px;
@@ -135,15 +119,15 @@ export default function Navbar() {
         }
 
         #kart {
-          padding-top: 18px;
-   
+          padding-top: 16px;
+
           padding-left: 20px;
           margin-left: auto;
           color: white;
         }
 
         #im {
-            margin-bottom: 5px;
+          margin-bottom: 5px;
         }
 
         #item {
