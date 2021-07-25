@@ -8,11 +8,6 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
   const isLoading = useCartContext()[2]
   const addToCart = useAddToCartContext()
 
-  const atcBtnStyle = isLoading
-    ? `pt-3 pb-2 bg-palette-primary text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex 
-                      justify-center items-baseline  hover:bg-palette-dark opacity-25 cursor-none`
-    : `pt-3 pb-2 bg-palette-primary text-white w-full mt-2 rounded-sm font-primary font-semibold text-xl flex 
-                      justify-center items-baseline  hover:bg-palette-dark`
 
   function handleSizeChange(e) {
     setVariantId(e)
@@ -67,10 +62,10 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
   return (
     <>
       <div></div>
-      <div className="w-full">
-        <div className="flex justify-start space-x-2 w-full">
-          <div className="flex flex-col items-start space-y-1 flex-grow-0">
-            <label className="text-gray-500 text-base">Qty.</label>
+      <div id="box">
+        <div>
+          <div>
+         
             <input
               type="number"
               inputMode="numeric"
@@ -80,8 +75,8 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
               step="1"
               value={quantity}
               onChange={e => updateQuantity(e.target.value)}
-              className="form-input"
-              id="inp"
+              id="inpu"
+        
             />
           </div>
         </div>
@@ -89,9 +84,42 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
         <button
           onClick={handleAddToCart}
         >
-          Add To Cart
+          ADD
         </button></div>
       </div>
+      <style jsx>{`
+      .buttonn {
+    border: transparent;
+border: 1px solid gray;
+box-shadow: 0px 1px 0px black;
+margin-left: 5px;
+border-radius: 3px;
+ 
+
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+        #inpu {
+          border-radius: 3px;
+  width: 70px;
+          margin-right: 10px;
+          border: 1px solid gray;
+          box-shadow: 0px 1px 0px black;
+     
+        }
+        #box {
+          display: grid;
+          grid-template-columns: 70px 90px;
+          grid-gap: 10px;
+          
+
+        }
+        `}
+      </style>
     </>
   )
 }

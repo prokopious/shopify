@@ -68,6 +68,7 @@ export default function Navbar() {
           aria-label="menu"
           aria-expanded="false"
           data-target="navbarBasicExample"
+          id="active"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -100,6 +101,10 @@ export default function Navbar() {
           color: white;
           padding-left: 5px;
         }
+#active {
+  color: white;
+}
+
 
         #nav {
           padding-top: 13px;
@@ -109,7 +114,8 @@ export default function Navbar() {
           color: white;
           padding-left: 5px;
         }
-        #thing {
+        #thing:hover {
+          color: silver;
         }
 
         #ikon {
@@ -126,12 +132,24 @@ export default function Navbar() {
           color: white;
         }
 
+        #kart:hover {
+          color: silver;
+        }
+
         #im {
           margin-bottom: 5px;
         }
 
         #item {
           padding-right: 30px;
+        }
+
+        @media only screen and (max-width: 1023px) {
+
+          #kart {
+          padding-top: 14px;
+          }
+
         }
       `}</style>
     </nav>

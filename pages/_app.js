@@ -27,12 +27,26 @@ function MyApp({ Component, pageProps }) {
           href="/images/favicon-16x16.png"
         />
       </Head>
-      <body className="has-navbar-fixed-top">
+      <body id="boody" className="has-navbar-fixed-top">
         <Layout>
           <SEO title="Hanover Farms" />
           <Component {...pageProps} />
         </Layout>
       </body>
+      <style jsx>{`
+        #boody {
+          animation: fadeInAnimation ease 1s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+      `}</style>
     </>
   )
 }

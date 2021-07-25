@@ -143,7 +143,7 @@ justify-content: center;
     </div></div>
   )} else {
     return (
-      <div id="centered2"><img src="/images/empty6.png"/></div>
+      <div id="centered2"><img src="/images/empty-2.png"/></div>
     )
   }
 }

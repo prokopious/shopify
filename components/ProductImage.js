@@ -11,16 +11,20 @@ function ProductImage({ images }) {
   }
 
   return (
-    <div className="plant">
-      <div className="relative h-96">
-        <img
-          src={mainImg.originalSrc}
-          alt={mainImg.altText}
-          layout="fill"
-          className="transform duration-500 ease-in-out hover:scale-105"
-        />
+    <div id="pic">
+      <div></div>
+      <div id="pic2">
+        <img src={mainImg.originalSrc} alt={mainImg.altText} />
       </div>
       <div></div>
+      <style jsx>{`
+          #pic {
+
+          }
+
+     
+          
+          `}</style>
     </div>
   )
 }

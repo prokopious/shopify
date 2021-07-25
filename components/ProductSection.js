@@ -3,9 +3,30 @@ import ProductDetails from '@/components/ProductDetails'
 
 function ProductSection({ productData }) {
   return (
-    <div className="flex flex-col justify-center items-center md:flex-row md:items-start space-y-8 md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
+    <div id="felx">
       <ProductImage images={productData.images.edges} />
       <ProductDetails productData={productData} />
+      <style jsx>{`
+        #felx {
+        margin-left: 20%;
+        margin-right: 20%;
+    
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        
+        }
+        @media only screen and (max-width: 1000px) {
+          #felx {
+        margin-left: 15%;
+        margin-right: 15%;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+
+        }
+        
+        `}</style>
     </div>
   )
 }
