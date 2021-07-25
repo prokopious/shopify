@@ -11,6 +11,44 @@ $navbar-background-color: rgba(0, 128, 0, 0.473);
   padding-bottom: 20px;
 }
 
+#divv {
+  background: url(https://images.pexels.com/photos/6129801/pexels-photo-6129801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#centered2 {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+
+
+
+
+}
+.centered3 {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+
+
+
+}
+#divv {
+  height: 100vw;
+  width: 100vw;
+  background-color: red;
+}
+
 
 
 #butcont {

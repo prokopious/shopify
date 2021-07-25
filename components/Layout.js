@@ -4,10 +4,8 @@ import Navbar from "@/components/Navbar"
 function Layout({ children }) {
   return (
     <CartProvider>
-      <html className="has-navbar-fixed-top">
-        <Navbar/>
-        <main>{children}</main>
-      </html>
+      <Navbar />
+      <main>{children}</main>
     </CartProvider>
   )
 }

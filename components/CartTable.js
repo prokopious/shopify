@@ -20,9 +20,12 @@ function CartTable() {
   function updateItem(id, quantity) {
     updateCartQuantity(id, quantity)
   }
-console.log(cartItems)
+  
+  const x = JSON.stringify(cartItems)
+
+if (x !== `[]`) {
   return (
-    <div className="min-h-80 max-w-2xl my-4 sm:my-8 mx-auto w-full">
+   <div className="display"> <div className="min-h-80 max-w-2xl my-4 sm:my-8 mx-auto w-full">
       <div className="mx-auto">
         <h2 id="kart">YOUR CART</h2>
         <div>
@@ -137,8 +140,12 @@ justify-content: center;
      
         }
       `}</style>
-    </div>
-  )
+    </div></div>
+  )} else {
+    return (
+      <div id="centered2"><img src="/images/empty6.png"/></div>
+    )
+  }
 }
 
 export default CartTable
