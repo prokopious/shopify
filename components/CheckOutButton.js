@@ -13,6 +13,17 @@ function CheckOutButton({ webUrl }) {
           padding-left: 5px;
           font-size: 20px;
         }
+
+        @media only screen and (max-width: 700px) {
+
+          #arrow {
+          padding-left: 5px;
+          font-size: 14px;
+        }
+
+
+
+        }
       `}</style>
     </div>
   )
