@@ -24,6 +24,8 @@ function CartTable() {
   const x = JSON.stringify(cartItems)
 
 if (x !== `[]`) {
+
+
   return (
    <div className="display"> <div className="min-h-80 max-w-2xl my-4 sm:my-8 mx-auto w-full">
       <div className="mx-auto">
@@ -37,7 +39,15 @@ if (x !== `[]`) {
           </div>
         </div>
         <div>
-          {cartItems.map(item => (
+          {cartItems.map(item => { 
+
+            const q = cartItems.indexOf(item)
+            console.log(q % 2)
+            if (q % 2 == 0) {
+            
+            return (
+
+           
             <div className="grid2" key={item.variantId}>
               <div>
                 <Link passHref href={`/products/${item.productHandle}`}>
@@ -68,7 +78,40 @@ if (x !== `[]`) {
                 </button>
               </div>
             </div>
-          ))}
+)} else {
+  return (
+    <><div className="grid4" key={item.variantId}>
+    <div>
+      <Link passHref href={`/products/${item.productHandle}`}>
+        <a>{item.productTitle}</a>
+      </Link>
+    </div>
+    <div className="inp">
+      <input
+        type="number"
+        inputMode="numeric"
+        id="variant-quantity"
+        name="variant-quantity"
+        min="1"
+        step="1"
+        value={item.variantQuantity}
+        onChange={e => updateItem(item.variantId, e.target.value)}
+        className="inp2"
+      />
+    </div>
+
+    <div>
+      <button
+        aria-label="delete-item"
+        className="bt"
+        onClick={() => updateItem(item.variantId, 0)}
+      >
+      x
+      </button>
+    </div>
+  </div></>
+  )
+}})}
           {subtotal === 0 ? null : (
             <div className="grid3">
               <div className="su">Subtotal:</div>
@@ -100,23 +143,26 @@ if (x !== `[]`) {
           padding-top: 0;
         }
         .bt {
-          padding: 3px;
+        
           color: red;
           font-weight: 900;
+          padding-left: 10px;
+        
         }
-        .inp {
-          padding-top: 5px;
+        .inp 
+          padding-top: 0px;
         }
         #grid {
           display: grid;
           grid-template-columns: 1fr 1fr 70px;
           margin-bottom: 20px;
-          padding-bottom: 5px;
+     
           border-bottom: 1px solid silver;
+          padding: 10px;
         }
 #but {
   margin-top: 20px;
-
+  padding: 10px;
 width: 100px;
 font-weight: 900;
 justify-content: center;
@@ -124,11 +170,21 @@ justify-content: center;
         .grid2 {
           display: grid;
           grid-template-columns: 1fr 1fr 70px;
+          padding: 10px;
+        
+        }
+        .grid4 {
+          display: grid;
+          grid-template-columns: 1fr 1fr 70px;
+          padding: 10px;
+      
         }
         .grid3 {
           display: grid;
           grid-template-columns: 1fr 1fr 70px;
           margin-top: 10px;
+          padding: 10px;
+        
         }
 
         .end {
