@@ -84,14 +84,14 @@ function ProductForm({ title, handle, variants, setVariantPrice, mainImg }) {
         <button
           onClick={handleAddToCart}
         >
-          ADD
+          Add
         </button></div>
       </div>
       <style jsx>{`
       .buttonn {
     border: transparent;
-border: 1px solid gray;
-box-shadow: 0px 1px 0px black;
+
+
 margin-left: 5px;
 border-radius: 3px;
  
@@ -107,8 +107,8 @@ border-radius: 3px;
           border-radius: 3px;
   width: 70px;
           margin-right: 10px;
-          border: 1px solid gray;
-          box-shadow: 0px 1px 0px black;
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.212);
+     padding-left: 10px;
      
         }
         #box {

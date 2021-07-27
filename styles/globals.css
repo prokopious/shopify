@@ -9,7 +9,14 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
 }
-
+#inpu {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.212);
+  background-color: rgba(128, 128, 128, 0.075);
+}
+.buttonn {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.212);
+  background-color: rgba(128, 128, 128, 0.075);
+}
 .butt-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -50,9 +57,12 @@
 }
 
 .grid3 {
-  background: linear-gradient(90deg, rgba(64, 64, 71, 0), rgba(255, 251, 0, 0.486));
+  background: linear-gradient(
+    90deg,
+    rgba(64, 64, 71, 0),
+    rgba(255, 251, 0, 0.486)
+  );
   margin-top: 10px;
-
 }
 
 .grid4 {
@@ -60,7 +70,7 @@
 }
 
 #header {
-background-image: url('https://www.linkpicture.com/q/wheat_3.jpg')
+  background-image: url("https://www.linkpicture.com/q/wheat_3.jpg");
 }
 .grid {
   display: grid;
@@ -68,7 +78,6 @@ background-image: url('https://www.linkpicture.com/q/wheat_3.jpg')
   grid-gap: 6px;
 }
 .marq {
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
@@ -116,14 +125,11 @@ background-image: url('https://www.linkpicture.com/q/wheat_3.jpg')
   max-width: 100%;
   margin-bottom: 2%;
   margin-top: 0;
-  background: url(https://images.pexels.com/photos/6129801/pexels-photo-6129801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+  background: url(https://images.pexels.com/photos/6129801/pexels-photo-6129801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 }
 
-
-
-
 #sub {
-padding-bottom: 45px;
+  padding-bottom: 45px;
 }
 
 @media only screen and (max-width: 700px) {

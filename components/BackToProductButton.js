@@ -4,12 +4,19 @@ import Link from "next/link"
 
 function BackToProductButton() {
   return (
-    <Link href="/" passHref>
-      <a aria-label="back-to-products" className="bbt">
-        <span id="arrow">  &larr;</span>
-        Back To All Products
-      </a>
-    </Link>
+    <>
+      <Link href="/" passHref>
+        <a aria-label="back-to-products" className="bbt">
+          <span id="arrow2"> &larr;</span>
+          Back To All Products
+        </a>
+      </Link>{" "}
+      <style jsx>{`
+        #arrow2 {
+          padding-right: 5px;
+        }
+      `}</style>
+    </>
   )
 }
 
