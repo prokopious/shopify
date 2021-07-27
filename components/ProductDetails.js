@@ -10,7 +10,6 @@ function ProductDetails({ productData }) {
 
   return (
     <div id="det">
-      <div></div>
       <div>
         <BackToProductButton />
       </div>
@@ -30,22 +29,20 @@ function ProductDetails({ productData }) {
           setVariantPrice={setVariantPrice}
         />
       </div>
-      <div></div>
+
       <style jsx>{`
         #det {
-        
           display: grid;
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+          width: 300px;
+          height: 300px;
           text-align: center;
           text-align: center;
           align-items: center;
           justify-content: center;
-       
         }
 
         #for {
           padding-top: 0px;
-      
         }
       `}</style>
     </div>

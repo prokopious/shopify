@@ -6,7 +6,7 @@ function BackToProductButton() {
   return (
     <>
       <Link href="/" passHref>
-        <a aria-label="back-to-products" className="bbt">
+        <a aria-label="back-to-products">
           <span id="arrow2"> &larr;</span>
           Back To All Products
         </a>

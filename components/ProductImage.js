@@ -12,14 +12,15 @@ function ProductImage({ images }) {
 
   return (
     <div id="pic">
-      <div></div>
-      <div id="pic2">
+ 
+      <div>
         <img src={mainImg.originalSrc} alt={mainImg.altText} />
       </div>
-      <div></div>
+
       <style jsx>{`
           #pic {
-
+width: 300px;
+height: 300px;
           }
 
      
