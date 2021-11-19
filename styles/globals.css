@@ -37,9 +37,15 @@
   border-radius: 4px;
 }
 
+#cover {
+  margin-left: 40px;
+}
+
 #pad {
   padding-bottom: 5px;
 }
+
+
 
 .info {
   padding: 5px;

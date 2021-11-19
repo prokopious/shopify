@@ -1,6 +1,4 @@
 import CartTable from "@/components/CartTable"
-import CheckOutButton from "@/components/CheckOutButton"
-import BackToProductButton from "@/components/BackToProductButton"
 import { useCartContext } from "@/context/Store"
 
 function CartPage() {

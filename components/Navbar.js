@@ -85,10 +85,10 @@ export default function Navbar() {
               Directions
             </a>
 
-            <a href="/" className="navbar-item">
+            <a href="/contact" className="navbar-item">
               About
             </a>
-            <a href="/" className="navbar-item">
+            <a href="/contact" className="navbar-item">
               Contact
             </a>
           </div>
