@@ -81,12 +81,8 @@ export default function Navbar() {
       >
         <div className="navbar-end">
           <div className="navbar-item">
-            <a href="/" className="navbar-item">
-              Directions
-            </a>
-
-            <a href="/contact" className="navbar-item">
-              About
+            <a href="/admin" className="navbar-item">
+              Admin
             </a>
             <a href="/contact" className="navbar-item">
               Contact
@@ -101,10 +97,9 @@ export default function Navbar() {
           color: white;
           padding-left: 5px;
         }
-#active {
-  color: white;
-}
-
+        #active {
+          color: white;
+        }
 
         #nav {
           padding-top: 13px;
@@ -145,11 +140,9 @@ export default function Navbar() {
         }
 
         @media only screen and (max-width: 1023px) {
-
           #kart {
-          padding-top: 14px;
+            padding-top: 14px;
           }
-
         }
       `}</style>
     </nav>
